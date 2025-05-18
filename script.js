@@ -1,8 +1,9 @@
 //your JS code here. If required.
 const element=document.getElementById("level");
 const findLevel=(element,level)=>{
-    if(element===null){
+    if(element==null){
         alert(`The level of the element is: ${level}`)
+		return;
     }
     element=element.parentElement;
     findLevel(element,level+1)
